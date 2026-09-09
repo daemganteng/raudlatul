@@ -7,20 +7,1220 @@
         <meta name="author" content="" />
         <title>Agency - Start Bootstrap Theme</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="https://picsum.photos/seed/favicon/64/64" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            /*!
+            * Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
+            * Copyright 2013-2023 Start Bootstrap
+            * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+            */
+            /*!
+            * Bootstrap  v5.2.3 (https://getbootstrap.com/)
+            * Copyright 2011-2022 The Bootstrap Authors
+            * Copyright 2011-2022 Twitter, Inc.
+            * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+            */
+            :root {
+                --bs-blue: #0d6efd;
+                --bs-indigo: #6610f2;
+                --bs-purple: #6f42c1;
+                --bs-pink: #d63384;
+                --bs-red: #dc3545;
+                --bs-orange: #fd7e14;
+                --bs-yellow: #fedcba;
+                --bs-green: #198754;
+                --bs-teal: #20c997;
+                --bs-cyan: #0dcaf0;
+                --bs-black: #000;
+                --bs-white: #fff;
+                --bs-gray: #6c757d;
+                --bs-gray-dark: #343a40;
+                --bs-gray-100: #f8f9fa;
+                --bs-gray-200: #e9ecef;
+                --bs-gray-300: #dee2e6;
+                --bs-gray-400: #ced4da;
+                --bs-gray-500: #adb5bd;
+                --bs-gray-600: #6c757d;
+                --bs-gray-700: #495057;
+                --bs-gray-800: #343a40;
+                --bs-gray-900: #212529;
+                --bs-primary: #ffc800;
+                --bs-secondary: #6c757d;
+                --bs-success: #198754;
+                --bs-info: #0dcaf0;
+                --bs-warning: #ffc800;
+                --bs-danger: #dc3545;
+                --bs-light: #f8f9fa;
+                --bs-dark: #212529;
+                --bs-primary-rgb: 255, 200, 0;
+                --bs-secondary-rgb: 108, 117, 125;
+                --bs-success-rgb: 25, 135, 84;
+                --bs-info-rgb: 13, 202, 240;
+                --bs-warning-rgb: 255, 200, 0;
+                --bs-danger-rgb: 220, 53, 69;
+                --bs-light-rgb: 248, 249, 250;
+                --bs-dark-rgb: 33, 37, 41;
+                --bs-white-rgb: 255, 255, 255;
+                --bs-black-rgb: 0, 0, 0;
+                --bs-body-color-rgb: 33, 37, 41;
+                --bs-body-bg-rgb: 255, 255, 255;
+                --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+                --bs-body-font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+                --bs-body-font-size: 1rem;
+                --bs-body-font-weight: 400;
+                --bs-body-line-height: 1.5;
+                --bs-body-color: #212529;
+                --bs-body-bg: #fff;
+                --bs-border-width: 1px;
+                --bs-border-style: solid;
+                --bs-border-color: #dee2e6;
+                --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+                --bs-border-radius: 0.375rem;
+                --bs-border-radius-sm: 0.25rem;
+                --bs-border-radius-lg: 0.5rem;
+                --bs-border-radius-xl: 1rem;
+                --bs-border-radius-2xl: 2rem;
+                --bs-border-radius-pill: 50rem;
+                --bs-link-color: #ffc800;
+                --bs-link-hover-color: #cca000;
+                --bs-code-color: #d63384;
+                --bs-highlight-bg: #fff4cc;
+            }
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: var(--bs-body-font-family);
+                font-size: var(--bs-body-font-size);
+                font-weight: var(--bs-body-font-weight);
+                line-height: var(--bs-body-line-height);
+                color: var(--bs-body-color);
+                text-align: var(--bs-body-text-align);
+                background-color: var(--bs-body-bg);
+                -webkit-text-size-adjust: 100%;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            }
+
+            .navbar {
+                --bs-navbar-padding-x: 0;
+                --bs-navbar-padding-y: 0.5rem;
+                --bs-navbar-color: rgba(0, 0, 0, 0.55);
+                --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+                --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+                --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+                --bs-navbar-brand-padding-y: 0.3125rem;
+                --bs-navbar-brand-margin-end: 1rem;
+                --bs-navbar-brand-font-size: 1.25rem;
+                --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+                --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+                --bs-navbar-nav-link-padding-x: 0.5rem;
+                --bs-navbar-toggler-padding-y: 0.25rem;
+                --bs-navbar-toggler-padding-x: 0.75rem;
+                --bs-navbar-toggler-font-size: 1.25rem;
+                --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+                --bs-navbar-toggler-border-radius: 0.375rem;
+                --bs-navbar-toggler-focus-width: 0.25rem;
+                --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+            }
+
+            .navbar>.container,
+            .navbar>.container-fluid,
+            .navbar>.container-sm,
+            .navbar>.container-md,
+            .navbar>.container-lg,
+            .navbar>.container-xl,
+            .navbar>.container-xxl {
+                display: flex;
+                flex-wrap: inherit;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .navbar-brand {
+                padding-top: var(--bs-navbar-brand-padding-y);
+                padding-bottom: var(--bs-navbar-brand-padding-y);
+                margin-right: var(--bs-navbar-brand-margin-end);
+                font-size: var(--bs-navbar-brand-font-size);
+                color: var(--bs-navbar-brand-color);
+                text-decoration: none;
+                white-space: nowrap;
+            }
+
+            .navbar-brand:hover,
+            .navbar-brand:focus {
+                color: var(--bs-navbar-brand-hover-color);
+            }
+
+            .navbar-nav {
+                --bs-nav-link-padding-x: 0;
+                --bs-nav-link-padding-y: 0.5rem;
+                --bs-nav-link-font-weight: ;
+                --bs-nav-link-color: var(--bs-navbar-color);
+                --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+                --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+                display: flex;
+                flex-direction: column;
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+            }
+
+            .navbar-nav .nav-link {
+                padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+                font-size: var(--bs-nav-link-font-size);
+                font-weight: var(--bs-nav-link-font-weight);
+                color: var(--bs-nav-link-color);
+                text-decoration: none;
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+            }
+
+            .navbar-collapse {
+                flex-basis: 100%;
+                flex-grow: 1;
+                align-items: center;
+            }
+
+            .navbar-toggler {
+                padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+                font-size: var(--bs-navbar-toggler-font-size);
+                line-height: 1;
+                color: var(--bs-navbar-color);
+                background-color: transparent;
+                border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+                border-radius: var(--bs-navbar-toggler-border-radius);
+                transition: var(--bs-navbar-toggler-transition);
+                cursor: pointer;
+            }
+
+            .navbar-dark {
+                --bs-navbar-color: rgba(255, 255, 255, 0.55);
+                --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+                --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+                --bs-navbar-active-color: #fff;
+                --bs-navbar-brand-color: #fff;
+                --bs-navbar-brand-hover-color: #fff;
+                --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+                --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+
+            .text-uppercase {
+                text-transform: uppercase !important;
+            }
+
+            .text-center {
+                text-align: center !important;
+            }
+
+            .text-muted {
+                --bs-text-opacity: 1;
+                color: #6c757d !important;
+            }
+
+            .text-white {
+                --bs-text-opacity: 1;
+                color: #fff !important;
+            }
+
+            .text-danger {
+                --bs-text-opacity: 1;
+                color: #dc3545 !important;
+            }
+
+            .bg-light {
+                --bs-bg-opacity: 1;
+                background-color: #f8f9fa !important;
+            }
+
+            .btn {
+                --bs-btn-padding-x: 0.75rem;
+                --bs-btn-padding-y: 0.375rem;
+                --bs-btn-font-family: ;
+                --bs-btn-font-size: 1rem;
+                --bs-btn-font-weight: 400;
+                --bs-btn-line-height: 1.5;
+                --bs-btn-color: #212529;
+                --bs-btn-bg: transparent;
+                --bs-btn-border-width: 1px;
+                --bs-btn-border-color: transparent;
+                --bs-btn-border-radius: 0.375rem;
+                --bs-btn-hover-border-color: transparent;
+                --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+                --bs-btn-disabled-opacity: 0.65;
+                --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+                display: inline-block;
+                padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+                font-family: var(--bs-btn-font-family);
+                font-size: var(--bs-btn-font-size);
+                font-weight: var(--bs-btn-font-weight);
+                line-height: var(--bs-btn-line-height);
+                color: var(--bs-btn-color);
+                text-align: center;
+                text-decoration: none;
+                vertical-align: middle;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+                border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+                border-radius: var(--bs-btn-border-radius);
+                background-color: var(--bs-btn-bg);
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            }
+
+            .btn-primary {
+                --bs-btn-color: #000;
+                --bs-btn-bg: #ffc800;
+                --bs-btn-border-color: #ffc800;
+                --bs-btn-hover-color: #000;
+                --bs-btn-hover-bg: #ffd026;
+                --bs-btn-hover-border-color: #ffce1a;
+                --bs-btn-focus-shadow-rgb: 217, 170, 0;
+                --bs-btn-active-color: #000;
+                --bs-btn-active-bg: #ffd333;
+                --bs-btn-active-border-color: #ffce1a;
+                --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #000;
+                --bs-btn-disabled-bg: #ffc800;
+                --bs-btn-disabled-border-color: #ffc800;
+            }
+
+            .btn-xl {
+                padding: 1.25rem 2.5rem;
+                font-size: 1.125rem;
+                font-weight: 700;
+            }
+
+            .btn-social {
+                height: 2.5rem;
+                width: 2.5rem;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                border-radius: 100%;
+            }
+
+            .btn-dark {
+                --bs-btn-color: #fff;
+                --bs-btn-bg: #212529;
+                --bs-btn-border-color: #212529;
+                --bs-btn-hover-color: #fff;
+                --bs-btn-hover-bg: #424649;
+                --bs-btn-hover-border-color: #373b3e;
+                --bs-btn-focus-shadow-rgb: 66, 70, 73;
+                --bs-btn-active-color: #fff;
+                --bs-btn-active-bg: #4d5154;
+                --bs-btn-active-border-color: #373b3e;
+                --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #fff;
+                --bs-btn-disabled-bg: #212529;
+                --bs-btn-disabled-border-color: #212529;
+            }
+
+            .btn.disabled,
+            .btn:disabled,
+            fieldset:disabled .btn {
+                pointer-events: none;
+                opacity: var(--bs-btn-disabled-opacity);
+            }
+
+            .row {
+                --bs-gutter-x: 1.5rem;
+                --bs-gutter-y: 0;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: calc(-1 * var(--bs-gutter-y));
+                margin-right: calc(-0.5 * var(--bs-gutter-x));
+                margin-left: calc(-0.5 * var(--bs-gutter-x));
+            }
+
+            .row>* {
+                flex-shrink: 0;
+                width: 100%;
+                max-width: 100%;
+                padding-right: calc(var(--bs-gutter-x) * 0.5);
+                padding-left: calc(var(--bs-gutter-x) * 0.5);
+                margin-top: var(--bs-gutter-y);
+            }
+
+            .col-lg-4 {
+                flex: 0 0 auto;
+                width: 33.33333333%;
+            }
+
+            .col-lg-8 {
+                flex: 0 0 auto;
+                width: 66.66666667%;
+            }
+
+            .col-md-3 {
+                flex: 0 0 auto;
+                width: 25%;
+            }
+
+            .col-md-4 {
+                flex: 0 0 auto;
+                width: 33.33333333%;
+            }
+
+            .col-md-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+
+            .col-sm-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+
+            .container {
+                --bs-gutter-x: 1.5rem;
+                --bs-gutter-y: 0;
+                width: 100%;
+                padding-right: calc(var(--bs-gutter-x) * 0.5);
+                padding-left: calc(var(--bs-gutter-x) * 0.5);
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            @media (min-width: 576px) {
+                .container {
+                    max-width: 540px;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .container {
+                    max-width: 720px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .container {
+                    max-width: 960px;
+                }
+                .col-lg-4 {
+                    flex: 0 0 auto;
+                    width: 33.33333333%;
+                }
+                .col-lg-8 {
+                    flex: 0 0 auto;
+                    width: 66.66666667%;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .container {
+                    max-width: 1140px;
+                }
+            }
+
+            @media (min-width: 1400px) {
+                .container {
+                    max-width: 1320px;
+                }
+            }
+
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .rounded-circle {
+                border-radius: 50% !important;
+            }
+
+            .mx-auto {
+                margin-right: auto !important;
+                margin-left: auto !important;
+            }
+
+            .d-block {
+                display: block !important;
+            }
+
+            .d-none {
+                display: none !important;
+            }
+
+            .my-3 {
+                margin-top: 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            .mb-3 {
+                margin-bottom: 1rem !important;
+            }
+
+            .mb-4 {
+                margin-bottom: 1.5rem !important;
+            }
+
+            .mb-5 {
+                margin-bottom: 3rem !important;
+            }
+
+            .mb-md-0 {
+                margin-bottom: 0 !important;
+            }
+
+            .mb-lg-0 {
+                margin-bottom: 0 !important;
+            }
+
+            .me-1 {
+                margin-right: 0.25rem !important;
+            }
+
+            .me-3 {
+                margin-right: 1rem !important;
+            }
+
+            .mx-2 {
+                margin-right: 0.5rem !important;
+                margin-left: 0.5rem !important;
+            }
+
+            .py-4 {
+                padding-top: 1.5rem !important;
+                padding-bottom: 1.5rem !important;
+            }
+
+            .py-5 {
+                padding-top: 3rem !important;
+                padding-bottom: 3rem !important;
+            }
+
+            .py-lg-0 {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+
+            .fw-bolder {
+                font-weight: bolder !important;
+            }
+
+            .text-decoration-none {
+                text-decoration: none !important;
+            }
+
+            .link-dark {
+                color: #212529 !important;
+            }
+            .link-dark:hover,
+            .link-dark:focus {
+                color: #1a1e21 !important;
+            }
+
+            .ms-1 {
+                margin-left: 0.25rem !important;
+            }
+
+            .ms-auto {
+                margin-left: auto !important;
+            }
+
+            .align-items-center {
+                align-items: center !important;
+            }
+
+            .align-items-stretch {
+                align-items: stretch !important;
+            }
+
+            .justify-content-center {
+                justify-content: center !important;
+            }
+
+            /* Navigation */
+            #mainNav {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                background-color: #212529;
+            }
+            #mainNav .navbar-brand {
+                font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                font-weight: 700;
+                letter-spacing: 0.0625em;
+                text-transform: uppercase;
+                color: #ffc800;
+            }
+            #mainNav .navbar-brand img {
+                height: 1.5rem;
+            }
+            #mainNav .navbar-nav .nav-item .nav-link {
+                font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                font-size: 0.95rem;
+                color: #fff;
+                letter-spacing: 0.0625em;
+            }
+            #mainNav .navbar-nav .nav-item .nav-link:hover,
+            #mainNav .navbar-nav .nav-item .nav-link:focus {
+                color: #ffc800;
+            }
+
+            @media (min-width: 992px) {
+                #mainNav {
+                    padding-top: 1.5rem;
+                    padding-bottom: 1.5rem;
+                    border: none;
+                    background-color: transparent;
+                    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
+                }
+                #mainNav .navbar-brand {
+                    font-size: 1.5em;
+                    transition: font-size 0.3s ease-in-out;
+                }
+                #mainNav .navbar-brand img {
+                    height: 2rem;
+                    transition: height 0.3s ease-in-out;
+                }
+                #mainNav.navbar-shrink {
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    background-color: #212529;
+                }
+                #mainNav.navbar-shrink .navbar-brand {
+                    font-size: 1.25em;
+                }
+                #mainNav.navbar-shrink .navbar-brand img {
+                    height: 1.5rem;
+                }
+            }
+
+            /* Masthead */
+            .masthead {
+                padding-top: 10.5rem;
+                padding-bottom: 6rem;
+                text-align: center;
+                color: #fff;
+                background-image: url("https://picsum.photos/seed/masthead/1920/1080");
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position: center center;
+                background-size: cover;
+            }
+            .masthead .masthead-subheading {
+                font-size: 1.5rem;
+                font-style: italic;
+                line-height: 1.5rem;
+                margin-bottom: 1.5rem;
+                font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+            .masthead .masthead-heading {
+                font-size: 3.25rem;
+                font-weight: 700;
+                line-height: 3.25rem;
+                margin-bottom: 2rem;
+                font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+
+            @media (min-width: 768px) {
+                .masthead {
+                    padding-top: 17rem;
+                    padding-bottom: 12.5rem;
+                }
+                .masthead .masthead-subheading {
+                    font-size: 2.25rem;
+                    font-style: italic;
+                    line-height: 2.25rem;
+                    margin-bottom: 2rem;
+                }
+                .masthead .masthead-heading {
+                    font-size: 4.5rem;
+                    font-weight: 700;
+                    line-height: 4.5rem;
+                    margin-bottom: 4rem;
+                }
+            }
+
+            /* Section */
+            .page-section {
+                padding: 6rem 0;
+            }
+            .page-section .section-heading {
+                font-size: 2.5rem;
+                margin-top: 0;
+                margin-bottom: 1rem;
+                font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+            .page-section .section-subheading {
+                font-size: 1rem;
+                font-weight: 400;
+                font-style: italic;
+                margin-bottom: 4rem;
+                font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+
+            /* Services */
+            .fa-stack {
+                display: inline-block;
+                height: 4em;
+                line-height: 4em;
+                position: relative;
+                vertical-align: middle;
+                width: 4em;
+            }
+            .fa-stack-2x {
+                font-size: 2em;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .fa-stack-1x {
+                line-height: inherit;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .text-primary {
+                color: #ffc800 !important;
+            }
+            .fa-inverse {
+                color: #fff;
+            }
+
+            /* Portfolio */
+            .portfolio-item {
+                display: block;
+                position: relative;
+                overflow: hidden;
+                max-width: 100%;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+            .portfolio-item .portfolio-hover {
+                display: flex;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 200, 0, 0.9);
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.25s ease;
+            }
+            .portfolio-item .portfolio-hover .portfolio-hover-content {
+                font-size: 1.25rem;
+                color: #fff;
+            }
+            .portfolio-item:hover .portfolio-hover {
+                opacity: 1;
+            }
+            .portfolio-item .portfolio-caption {
+                padding: 1.5rem;
+                text-align: center;
+                background-color: #fff;
+            }
+            .portfolio-item .portfolio-caption .portfolio-caption-heading {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 0;
+                font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+            .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+                font-style: italic;
+                font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+
+            /* Timeline */
+            .timeline {
+                position: relative;
+                padding: 0;
+                list-style: none;
+            }
+            .timeline:before {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 40px;
+                width: 2px;
+                margin-left: -1.5px;
+                content: "";
+                background-color: #e9ecef;
+            }
+            .timeline>li {
+                position: relative;
+                min-height: 50px;
+                margin-bottom: 50px;
+            }
+            .timeline>li:after,
+            .timeline>li:before {
+                display: table;
+                content: " ";
+            }
+            .timeline>li:after {
+                clear: both;
+            }
+            .timeline>li .timeline-panel {
+                position: relative;
+                float: right;
+                width: 100%;
+                padding: 0 20px 0 100px;
+                text-align: left;
+            }
+            .timeline>li .timeline-panel:before {
+                right: auto;
+                left: -15px;
+                border-right-width: 15px;
+                border-left-width: 0;
+            }
+            .timeline>li .timeline-panel:after {
+                right: auto;
+                left: -14px;
+                border-right-width: 14px;
+                border-left-width: 0;
+            }
+            .timeline>li .timeline-image {
+                position: absolute;
+                left: 0;
+                width: 80px;
+                height: 80px;
+                margin-left: 0;
+                text-align: center;
+                color: #fff;
+                border: 7px solid #e9ecef;
+                border-radius: 100%;
+                background-color: #ffc800;
+            }
+            .timeline>li .timeline-image img {
+                border-radius: 50%;
+                width: 66px;
+                height: 66px;
+                object-fit: cover;
+            }
+            .timeline>li .timeline-image h4 {
+                font-size: 10px;
+                line-height: 14px;
+                margin-top: 12px;
+            }
+            .timeline>li.timeline-inverted>.timeline-panel {
+                float: right;
+                padding: 0 20px 0 100px;
+                text-align: left;
+            }
+            .timeline>li.timeline-inverted>.timeline-panel:before {
+                right: auto;
+                left: -15px;
+                border-right-width: 15px;
+                border-left-width: 0;
+            }
+            .timeline>li.timeline-inverted>.timeline-panel:after {
+                right: auto;
+                left: -14px;
+                border-right-width: 14px;
+                border-left-width: 0;
+            }
+            .timeline>li:last-child {
+                margin-bottom: 0;
+            }
+            .timeline .timeline-heading h4 {
+                margin-top: 0;
+                color: inherit;
+            }
+            .timeline .timeline-heading h4.subheading {
+                text-transform: none;
+                font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+            .timeline .timeline-body>p,
+            .timeline .timeline-body>ul {
+                margin-bottom: 0;
+            }
+
+            @media (min-width: 768px) {
+                .timeline:before {
+                    left: 50%;
+                }
+                .timeline>li {
+                    min-height: 100px;
+                    margin-bottom: 100px;
+                }
+                .timeline>li .timeline-panel {
+                    float: left;
+                    width: 41%;
+                    padding: 0 20px 20px 30px;
+                    text-align: right;
+                }
+                .timeline>li .timeline-image {
+                    left: 50%;
+                    width: 100px;
+                    height: 100px;
+                    margin-left: -50px;
+                }
+                .timeline>li .timeline-image img {
+                    width: 86px;
+                    height: 86px;
+                }
+                .timeline>li .timeline-image h4 {
+                    font-size: 13px;
+                    line-height: 18px;
+                    margin-top: 16px;
+                }
+                .timeline>li.timeline-inverted>.timeline-panel {
+                    float: right;
+                    padding: 0 30px 20px 20px;
+                    text-align: left;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .timeline>li {
+                    min-height: 150px;
+                }
+                .timeline>li .timeline-panel {
+                    padding: 0 20px 20px;
+                }
+                .timeline>li .timeline-image {
+                    width: 150px;
+                    height: 150px;
+                    margin-left: -75px;
+                }
+                .timeline>li .timeline-image img {
+                    width: 136px;
+                    height: 136px;
+                }
+                .timeline>li .timeline-image h4 {
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-top: 30px;
+                }
+                .timeline>li.timeline-inverted>.timeline-panel {
+                    padding: 0 20px 20px;
+                }
+            }
+
+            /* Team */
+            .team-member {
+                margin-bottom: 3rem;
+                text-align: center;
+            }
+            .team-member img {
+                width: 14rem;
+                height: 14rem;
+                border: 0.5rem solid rgba(0, 0, 0, 0.1);
+                object-fit: cover;
+            }
+            .team-member h4 {
+                margin-top: 1.5rem;
+                margin-bottom: 0;
+            }
+
+            /* Clients */
+            .img-brand {
+                height: 2.75rem;
+                width: auto;
+                filter: grayscale(100%);
+                transition: filter 0.2s ease-in-out;
+                object-fit: contain;
+            }
+            .img-brand:hover {
+                filter: grayscale(0%);
+            }
+
+            /* Contact */
+            #contact {
+                background-color: #212529;
+                background-image: url("https://picsum.photos/seed/contactbg/1920/1080");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+            #contact .section-heading {
+                color: #fff;
+            }
+            #contact .section-subheading {
+                color: #fff;
+            }
+            #contact .form-group {
+                margin-bottom: 1.5rem;
+            }
+            #contact .form-group input,
+            #contact .form-group textarea {
+                padding: 1.25rem 0.75rem;
+                font-size: 1rem;
+                font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+            #contact .form-group textarea {
+                height: 100%;
+                min-height: 10rem;
+            }
+            #contact .form-control:focus {
+                border-color: #ffc800;
+                box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
+            }
+            #contact .invalid-feedback {
+                display: none;
+                font-size: 0.875rem;
+                color: #dc3545;
+            }
+            #contact .form-control.is-invalid~.invalid-feedback {
+                display: block;
+            }
+
+            /* Footer */
+            .footer {
+                text-align: center;
+                background-color: #212529;
+                color: #fff;
+            }
+            .footer .btn-social {
+                background-color: #fff;
+                color: #212529;
+            }
+            .footer .btn-social:hover {
+                background-color: #ffc800;
+                color: #212529;
+            }
+            .footer .link-dark {
+                color: #fff !important;
+            }
+            .footer .link-dark:hover {
+                color: #ffc800 !important;
+            }
+            .footer .text-lg-start {
+                text-align: center !important;
+            }
+            .footer .text-lg-end {
+                text-align: center !important;
+            }
+
+            @media (min-width: 992px) {
+                .footer .text-lg-start {
+                    text-align: left !important;
+                }
+                .footer .text-lg-end {
+                    text-align: right !important;
+                }
+            }
+
+            /* Modals */
+            .portfolio-modal .modal-dialog {
+                max-width: 800px;
+                margin: 1.5rem auto;
+            }
+            .portfolio-modal .modal-content {
+                padding: 2rem 0;
+                border: none;
+                border-radius: 0;
+                text-align: center;
+                background-clip: border-box;
+                -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            }
+            .portfolio-modal .modal-content h2 {
+                font-size: 2.5rem;
+                margin-bottom: 0.5rem;
+                font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+            .portfolio-modal .modal-content .item-intro {
+                font-size: 1rem;
+                font-style: italic;
+                margin-bottom: 2rem;
+                font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            }
+            .portfolio-modal .modal-content img {
+                margin-bottom: 2rem;
+            }
+            .portfolio-modal .modal-content .list-inline {
+                padding-left: 0;
+                list-style: none;
+                margin-top: 2rem;
+            }
+            .portfolio-modal .modal-content .list-inline li {
+                display: inline-block;
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+            .portfolio-modal .close-modal {
+                position: absolute;
+                top: 1.5rem;
+                right: 1.5rem;
+                width: 3rem;
+                height: 3rem;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                opacity: 0.5;
+                transition: opacity 0.2s ease;
+                z-index: 10;
+            }
+            .portfolio-modal .close-modal:hover {
+                opacity: 1;
+            }
+            .portfolio-modal .close-modal img {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            /* Modal backdrop */
+            .modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1055;
+                display: none;
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+                overflow-y: auto;
+                outline: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .modal.fade {
+                transition: opacity 0.15s linear;
+            }
+            .modal-dialog {
+                position: relative;
+                width: auto;
+                margin: 0.5rem;
+                pointer-events: none;
+            }
+            .modal.fade .modal-dialog {
+                transform: translate(0, -50px);
+                transition: transform 0.3s ease-out;
+            }
+            .modal.show .modal-dialog {
+                transform: none;
+            }
+            .modal-content {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                pointer-events: auto;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-radius: 0.5rem;
+                outline: 0;
+            }
+            .modal-body {
+                position: relative;
+                flex: 1 1 auto;
+                padding: 1rem;
+            }
+
+            /* Misc */
+            .large {
+                font-size: 1.25rem;
+            }
+
+            .form-control {
+                display: block;
+                width: 100%;
+                padding: 0.375rem 0.75rem;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                appearance: none;
+            }
+            .form-control:focus {
+                color: #212529;
+                background-color: #fff;
+                border-color: #ffc800;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
+            }
+
+            .invalid-feedback {
+                display: none;
+                width: 100%;
+                margin-top: 0.25rem;
+                font-size: 0.875em;
+                color: #dc3545;
+            }
+
+            .was-validated .form-control:invalid~.invalid-feedback,
+            .was-validated .form-control:invalid~.invalid-tooltip,
+            .form-control.is-invalid~.invalid-feedback,
+            .form-control.is-invalid~.invalid-tooltip {
+                display: block;
+            }
+
+            .fa-3x {
+                font-size: 3em;
+            }
+            .fa-4x {
+                font-size: 4em;
+            }
+
+            .text-lg-start {
+                text-align: left !important;
+            }
+            .text-lg-end {
+                text-align: right !important;
+            }
+
+            .my-3 {
+                margin-top: 1rem !important;
+                margin-bottom: 1rem !important;
+            }
+            .my-lg-0 {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+            }
+
+            @media (min-width: 992px) {
+                .my-lg-0 {
+                    margin-top: 0 !important;
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .mb-4 {
+                margin-bottom: 1.5rem !important;
+            }
+            .mb-sm-0 {
+                margin-bottom: 0 !important;
+            }
+
+            .fa-stack .fa-circle {
+                color: #ffc800 !important;
+            }
+
+            /* Fix for close icon */
+            .close-modal img {
+                width: 2rem;
+                height: 2rem;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top">
+                    <img src="https://picsum.photos/seed/logo/150/50" alt="Logo" style="height:2rem; width:auto;" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -88,13 +1288,12 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <img class="img-fluid" src="https://picsum.photos/seed/port1/800/600" alt="Threads project" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Threads</div>
@@ -103,13 +1302,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                                <img class="img-fluid" src="https://picsum.photos/seed/port2/800/600" alt="Explore project" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Explore</div>
@@ -118,13 +1316,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                                <img class="img-fluid" src="https://picsum.photos/seed/port3/800/600" alt="Finish project" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Finish</div>
@@ -133,13 +1330,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <img class="img-fluid" src="https://picsum.photos/seed/port4/800/600" alt="Lines project" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Lines</div>
@@ -148,13 +1344,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <img class="img-fluid" src="https://picsum.photos/seed/port5/800/600" alt="Southwest project" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Southwest</div>
@@ -163,13 +1358,12 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                                <img class="img-fluid" src="https://picsum.photos/seed/port6/800/600" alt="Window project" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Window</div>
@@ -189,7 +1383,7 @@
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://picsum.photos/seed/about1/300/300" alt="About 1" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2009-2011</h4>
@@ -199,7 +1393,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://picsum.photos/seed/about2/300/300" alt="About 2" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>March 2011</h4>
@@ -209,7 +1403,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://picsum.photos/seed/about3/300/300" alt="About 3" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>December 2015</h4>
@@ -219,7 +1413,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://picsum.photos/seed/about4/300/300" alt="About 4" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>July 2020</h4>
@@ -229,8 +1423,8 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
+                        <div class="timeline-image" style="background-color:#ffc800; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:0.9rem; text-align:center; line-height:1.3;">
+                            <h4 style="margin:0; font-size:0.9rem;">
                                 Be Part
                                 <br />
                                 Of Our
@@ -252,7 +1446,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="https://picsum.photos/seed/team1/400/400" alt="Parveen Anand" />
                             <h4>Parveen Anand</h4>
                             <p class="text-muted">Lead Designer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -262,7 +1456,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="https://picsum.photos/seed/team2/400/400" alt="Diana Petersen" />
                             <h4>Diana Petersen</h4>
                             <p class="text-muted">Lead Marketer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -272,7 +1466,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="https://picsum.photos/seed/team3/400/400" alt="Larry Parker" />
                             <h4>Larry Parker</h4>
                             <p class="text-muted">Lead Developer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
@@ -291,16 +1485,16 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="https://picsum.photos/seed/microsoft/200/100" alt="Microsoft Logo" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="https://picsum.photos/seed/google/200/100" alt="Google Logo" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="https://picsum.photos/seed/facebook/200/100" alt="Facebook Logo" /></a>
                     </div>
                     <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="https://picsum.photos/seed/ibm/200/100" alt="IBM Logo" /></a>
                     </div>
                 </div>
             </div>
@@ -310,61 +1504,41 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted" style="color:rgba(255,255,255,0.7) !important;">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <!-- Name input-->
                                 <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <div class="form-group">
-                                <!-- Email address input-->
                                 <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
                                 <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required" style="height:100%; min-height:10rem;"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center text-white mb-3">
                             <div class="fw-bolder">Form submission successful!</div>
                             To activate this form, sign up at
                             <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            <a href="https://startbootstrap.com/solution/contact-forms" style="color:#ffc800;">https://startbootstrap.com/solution/contact-forms</a>
                         </div>
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
                 </form>
             </div>
@@ -380,36 +1554,31 @@
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <a class="link-dark text-decoration-none me-3" href="#!" style="color:#fff !important;">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!" style="color:#fff !important;">Terms of Use</a>
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
+
+        <!-- Portfolio Modals -->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <button class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <span style="font-size:2.5rem; line-height:1; color:#000;">&times;</span>
+                    </button>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="https://picsum.photos/seed/port1/800/600" alt="Project 1" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
+                                        <li><strong>Client:</strong> Threads</li>
+                                        <li><strong>Category:</strong> Illustration</li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -422,29 +1591,24 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <button class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <span style="font-size:2.5rem; line-height:1; color:#000;">&times;</span>
+                    </button>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="https://picsum.photos/seed/port2/800/600" alt="Project 2" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
+                                        <li><strong>Client:</strong> Explore</li>
+                                        <li><strong>Category:</strong> Graphic Design</li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -457,29 +1621,24 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <button class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <span style="font-size:2.5rem; line-height:1; color:#000;">&times;</span>
+                    </button>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="https://picsum.photos/seed/port3/800/600" alt="Project 3" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
+                                        <li><strong>Client:</strong> Finish</li>
+                                        <li><strong>Category:</strong> Identity</li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -492,29 +1651,24 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <button class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <span style="font-size:2.5rem; line-height:1; color:#000;">&times;</span>
+                    </button>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="https://picsum.photos/seed/port4/800/600" alt="Project 4" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
+                                        <li><strong>Client:</strong> Lines</li>
+                                        <li><strong>Category:</strong> Branding</li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -527,29 +1681,24 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 5 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <button class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <span style="font-size:2.5rem; line-height:1; color:#000;">&times;</span>
+                    </button>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="https://picsum.photos/seed/port5/800/600" alt="Project 5" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
+                                        <li><strong>Client:</strong> Southwest</li>
+                                        <li><strong>Category:</strong> Website Design</li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -562,29 +1711,24 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 6 modal popup-->
+
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <button class="close-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <span style="font-size:2.5rem; line-height:1; color:#000;">&times;</span>
+                    </button>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="https://picsum.photos/seed/port6/800/600" alt="Project 6" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
+                                        <li><strong>Client:</strong> Window</li>
+                                        <li><strong>Category:</strong> Photography</li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -597,14 +1741,32 @@
                 </div>
             </div>
         </div>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script>
+            // Navbar shrink on scroll
+            window.addEventListener('scroll', function() {
+                const nav = document.getElementById('mainNav');
+                if (window.scrollY > 100) {
+                    nav.classList.add('navbar-shrink');
+                } else {
+                    nav.classList.remove('navbar-shrink');
+                }
+            });
+
+            // Close modal on backdrop click
+            document.querySelectorAll('.portfolio-modal').forEach(function(modal) {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === modal) {
+                        const closeBtn = modal.querySelector('[data-bs-dismiss="modal"]');
+                        if (closeBtn) closeBtn.click();
+                    }
+                });
+            });
+        </script>
+        <!-- SB Forms JS -->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
